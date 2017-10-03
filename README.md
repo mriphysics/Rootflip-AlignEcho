@@ -5,7 +5,7 @@ Download Abstract and ePoster from [here](https://kclpure.kcl.ac.uk/portal/en/pu
 Root-flipped Multiband refocusing RF pulses as proposed by Sharma et al (MRM 2016) are more time-efficient pulses compared to pulses designed by phase-optimization (Wong 2012) and time-shifting (Auerbach 2013). However, this has been achieved by exciting different slices at different times during the RF pulse.
 A consequence of this is that when Root-flipped pulses are used in a spin-echo pair, different slices will also form a spin-echo at different times. This is shown below.
 
-<img src="bin/fig1.png" alt="fig1" width="100%">
+<img src="bin/Fig1.png" alt="Fig1" width="100%">
 
 This can be problematic for a single-shot EPI acquisition, where you want to cross the center of k-space at the peak of the echo-formation (i.e. at "Nominal TE"). In reality, you'd probably still acquire all the echoes at the nominal TE, but this means that different slices will be possibly be measured with different T2 and T2-star weighting. 
 
@@ -19,11 +19,11 @@ In this work we've made two contributions:
 
 Auerbach (MRM 2013) and Sharma (MRM 2016) already identified three excitation methods (Align-TE, Aligned-echo and minimum duration) which circumvent this issue in different way. Below is a comparison, showing that only the inherently aligned method fully aligns the echoes:
 
-<img src="bin/fig3.png" alt="fig3" width="100%">
+<img src="bin/Fig3.png" alt="Fig3" width="100%">
 
 The expected disparity from Bloch simulation (presented in milli-seconds) for different Multi-band factors:
 
-<img src="bin/fig4.png" alt="fig4" width="100%">
+<img src="bin/Fig4.png" alt="Fig4" width="100%">
 
 This code was further developed from the code released by Sharma et al for the root-flipping publication, which is available at:
 http://www.vuiis.vanderbilt.edu/~grissowa/
