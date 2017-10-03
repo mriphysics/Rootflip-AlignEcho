@@ -3,7 +3,7 @@
 Download Abstract and ePoster from [here](https://kclpure.kcl.ac.uk/portal/en/publications/rootflipped-multiband-pulses-with-inherently-aligned-echoes(4cea6aef-4143-4f76-b75d-72ddebf7abd2).html).
 
 Root-flipped Multiband refocusing RF pulses as proposed by Sharma et al (MRM 2016) are more time-efficient pulses compared to pulses designed by phase-optimization (Wong 2012) and time-shifting (Auerbach 2013). However, this has been achieved by exciting different slices at different times during the RF pulse.
-A consequence of this is that when Root-flipped pulses are used in a spin-echo pair, different slices will also form a spin-echo at different times. This is shown below.
+A consequence of this is that when Root-flipped pulses are used in a spin-echo pair, different slices will also form a spin-echo at different times. This is shown below, in case of a MB5 Root-flipped pulse where the spin-echo signal in 5 slices is simulated (1 slice shown in black, 4 slices in gray).
 
 <img src="bin/Fig1.png" alt="Fig1" width="100%">
 
@@ -15,9 +15,9 @@ We've identified two parameters that matter:
 
 In this work we've made two contributions:
 * Solving the Bloch equations, we've simulated these spin-echoes for a range of Multi-band factors to see what disparities in T-xy and T-arrival we can expect.
-* Provide a modified root-flipped technique which inherently aligns all the echoes. This means that spin-echoes reach their peak almost simultaneously (thus having minimal T2-star disparity), and spend almost equal time being transeverse (thus having negligible difference in their T2 weighting).
+* Provide a modified root-flipped technique which inherently aligns all the echoes. This means that spin-echoes reach their peak almost simultaneously (thus having minimal T2-star disparity), and spend almost equal time being transverse (thus having negligible difference in their T2 weighting).
 
-Auerbach (MRM 2013) and Sharma (MRM 2016) already identified three excitation methods (Align-TE, Aligned-echo and minimum duration) which circumvent this issue in different way. Below is a comparison, showing that only the inherently aligned method fully aligns the echoes:
+Auerbach (MRM 2013) and Sharma (MRM 2016) already identified three excitation methods (Align-TE, Aligned-echo and minimum duration) which circumvent this issue in different ways. Below is a comparison, showing that only the "align-all" method fully aligns the echoes:
 
 <img src="bin/Fig3.png" alt="Fig3" width="100%">
 
